@@ -1,0 +1,61 @@
+\documentclass[11pt, a4paper]{moderncv}
+\usepackage[ngerman]{babel}   %Paket für deutsche Spracheinstellungen.
+\usepackage[utf8]{inputenc}  %Das Dokument soll UTF-8-Format nutzen (wegen deutschen Umlauten).
+\usepackage[left=2.4cm, right=1.0cm, top=1.7cm, bottom=2.0cm]{geometry}  %Seitenrand anpassen.
+ %\usepackage{fontawesome}  %Paket für schönere Symbole bei den persönlichen Daten.
+ 
+\moderncvtheme[black]{banking}
+ %\moderncvicons{awesome}
+ 
+ %Die persönlichen Daten:
+\name{Kimi}{Müller}
+\title{Lebenslauf}
+\address{Neue Staße 3}{66909 Wahnwegen}
+\phone[mobile]{+49\,176\,57685909}
+\phone[fixed]{06384\,993572}
+\email{kimi-mueller@protonmail.com}
+\homepage{www.kimimueller.de}
+\social[github][www.github.com]{kuseler}
+%\extrainfo{Die Webseite ist derzeit inaktiv.}
+\photo[3cm]{foto}  %Die Dateiendung wird weggelassen.
+ 
+ 
+\begin{document}
+  \makecvtitle
+  
+  
+  \section{Persönliche Daten}
+  \cvline{Geburtstag}{28.09.2003}
+  
+  \section{Schulbildung}
+  \cventry{17.08.2020--25.03.2023}{Abitur}{Siebenpfeiffer-Gymnasium}{Kusel}{Leistungsfächer: Informatik, Physik, Englisch}{}
+  \cventry{08.09.2014--05.07.2020}{Mittlere Reife}{Siebenpfeiffer-Gymnasium}{Kusel}{}{}
+  
+  \section{Berufliche Erfahrung}
+  \cventry{05.07.2021--15.07.2021}{Praktikum im Bereich Elektronik/Sicherheitstechnik}{Pfalz-Alarm GmbH}{Kaiserslautern}{}{Prüfung und Wartung von Sicherheitssystemen \newline{}%
+  Erfolg: eigenständige Programmierung und Installation einer Brandmeldeanlage im Übungsbereich der Firma}
+  
+    
+  \section{IT-Kenntnisse}
+ % \cvcomputer{MS Office}{Grundkenntnisse}
+  \cvcomputer{\LaTeX}{Physikhausaufgaben, Bewerbungen}{Linux}{Verwaltung eines eigenen VPS, Nextcloud-Instanz mit Docker,
+  Homeassistant-Instanz, Arch Linux in täglicher Benutzung}
+  
+  \subsection{Programmiersprachen}
+  \cvcomputer{Python3}{Programm zur Manipulation von Daten in einem Computerspiel, Programm zur Lösung eines Sudoku, verschiedene Codingchallenges}{SQL (MySQL)}{Grundkenntnisse}
+  \cvcomputer{Bash}{Grundkenntnisse}{}{}
+
+  
+  \section{Sprachkenntnisse}
+  \cvlanguage{Deutsch}{Muttersprache}{}
+  \cvlanguage{Englisch}{B2}{Schulunterricht von der 2. bis zur 12. Klasse}
+  \cvlanguage{Französisch}{A2}{Schulunterricht von der 6. bis zur 10. Klasse}
+  
+  \section{Hobbys und Interessen}
+  \cvlistdoubleitem{Schach, SC Thallichtenberg}{Handball, TV Kusel}
+  \cvlistdoubleitem{Kochen}{Klavier}
+  \cvlistitem{Coding-Challenges auf entwicklerheld.de und codewars.com bearbeiten}
+  \vfill  %Platz bis Seitenende auffüllen.
+  Kimi Müller\\
+  Wahnwegen, \today
+\end{document}
