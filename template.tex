@@ -32,7 +32,7 @@
 	% sectioncolor=red,
 	% subsectioncolor=orange,
 	% itemtextcolor=black!80,
-	% sidebarwidth=0.4\paperwidth,
+	sidebarwidth=0.34\paperwidth,
 	% topbottommargin=0.03\paperheight,
 	% leftrightmargin=20pt,
 	% profilepicsize=4.5cm,
@@ -87,6 +87,8 @@
 
 % enable mathematical syntax for some symbols like \varnothing
 \usepackage{amssymb}
+
+\usepackage[ngerman]{babel}
 
 % bubble diagram configuration
 \usepackage{smartdiagram}
@@ -164,17 +166,17 @@
 		\pointskill{\flag{FR.png}}{Französisch}{1}
 
 	\sidesection{Hard Skills}
-		\pointskill{\faCode}{Python3}{3}[5]
-			\skill[1.8em]{\faCompress}{Wettbewerbe, Challenges}
+		\pointskill{\faPython}{Python3}{3}[5]
+			\skill[1.8em]{\faCode}{Wettbewerbe, Challenges}
 		\pointskill{\faPrint}{\LaTeX}{2}[5]
-			\skill[1.8em]{\faCompress}{Dokumentation, Bewerbungen}
+			\skill[1.8em]{\faSuperscript}{Dokumentation, Bewerbungen}
 		\pointskill{\faCode}{GoLang}{2}[5]
-			\skill[1.8em]{\faCompress}{Hetzner API-Operator}
-		\pointskill{\faCode}{Linux}{2}[5]
-			\skill[1.8em]{\faCompress}{Eigener VPS, Arch Linux}
-		\pointskill{\faCode}{Bash}{1}[5]
+			\skill[1.8em]{\faServer}{Hetzner API-Operator}
+		\pointskill{\faLinux}{Linux}{2}[5]
+			\skill[1.8em]{\faServer}{Eigener VPS, Arch Linux}
+		\pointskill{\faDesktop}{Bash}{1}[5]
 			\skill[1.8em]{\faCompress}{Grundkenntnisse}
-		\pointskill{\faCode}{SQL (MySQL)}{1}[5]
+		\pointskill{\faTable}{SQL (MySQL)}{1}[5]
 			\skill[1.8em]{\faCompress}{Grundkenntnisse}
 
 		
@@ -198,7 +200,7 @@
 		\skill{\faBalanceScale}{Teamfähigkeit}
 	\sidesection{Über mich}
 	\aboutme{
-		Ich bin ein ambitioniertes junges Talent mit Codingerfahrung durch Wettbewerbe und Challenges. In meiner Freizeit spiele ich Handball und Schach, in letzterem bin ich Jugendleiter.
+		Ich bin ein ambitioniertes junges Talent mit Codingerfahrung durch Wettbewerbe, Challenges und ein Praktikum. In meiner Freizeit spiele ich Handball und Schach, in letzterem bin ich Jugendleiter.
 		}
 
 % 	\sidesection{Diagrams}
@@ -248,20 +250,65 @@
 }
 
 
+
 %-------------------------------------------------------------------------------
 %                         TABLE ENTRIES RIGHT COLUMN
 %-------------------------------------------------------------------------------
 \begin{document}
 
+% Anschreiben
+
+\begin{sidebar}
+\begin{sidebarminipage}
+
+		% optionally insert logo picture before profile
+		\plotlogobefore
+
+		% optionally insert profile picture
+		\plotprofilepicture
+
+		% optionally insert logo picture after profile
+		\plotlogoafter
+
+		\vspace{1ex}
+
+		% name and job
+		\nameandjob
+
+		% personal information
+		\vspace*{0.5em}
+		\begin{icontable}[1.6]{1.7em}{0.4em}
+			\personaldata
+		\end{icontable}
+
+		% user definitions\end{sidebarminipage}
+\end{sidebarminipage}
+\end{sidebar}
+
+%  \newgeometry{
+%  	top=0.5in,
+%  	bottom=\topbottommargin,
+%  	right=\leftrightmargin,
+%  	left=\leftrightmargin
+%  }
+
+\cvsection{Bewerbung auf ein duales Studium} % ÄNDER
+
+{\raggedright \large Sehr geehrte Damen und Herren,\\Ihre Ausschreibung für ein Duales Studium zum Bachelor Angewandte Informatik stieß bei mir auf großes Interesse. Die Skalierung, die ein Geschäftsvolumen von 2.980 Milliarden Euro ermöglicht, ist eine Herausforderung, die mich bei Ihnen besonders reizt.\\Ich habe großen Spaß an der Arbeit im Team, kann aber auch selbstständig, organisiert und engagiert. Seit meinem 16. Lebensjahr bin ich begeistert von Informatik und seit einem Jahr habe ich Interesse an Wirtschaft.\\In meiner Freizeit spiele ich Handball und Schach, in meinem Schachverein veranstalte ich das Jugendtraining. Des weiteren löse ich Coding-Challenges und nehme am Bundeswettbewerb Informatik teil.}
+
+\newpage
+
+
+% Ende Anschreiben
+
 \makefrontsidebar
 
 \cvsection{Berufserfahrung}
 \begin{cvtable}[3]
-	\cvitem{08.08.2022 -- 19.08.2022}{Software Developer}{System Vertrieb Alexander}{
-	Grundlagen der Softwareentwicklung mit GoLang und Programmierung eines HTTP-Proxys.
-	Anschließende Programmierung eines Operators zur Kreation und Löschung von virtuellen Servern und SSH-Keys. Anschließende Konzeptionierung von Benchmarks zu CloudInit-Konfigurationen. Ein Ausblick auf Containerorchestrierung mit Kubernetes fand auch statt.}
+	\cvitem{08.08.2022 -- 19.08.2022}{Praktikum als Software Developer}{System Vertrieb Alexander}{
+	Grundlagen der Softwareentwicklung mit GoLang und Programmierung eines HTTP-Proxys. Anschließende Programmierung eines Operators zur Kreation und Löschung von virtuellen Servern und SSH-Keys. Zusätzlich dazu Konzeptionierung von Benchmarks zu CloudInit-Konfigurationen. Ein Ausblick auf Containerorchestrierung mit Kubernetes fand auch statt.}
 	
-	\cvitem{05.07.21 -- 15.07.21}{Elektroniker}{Pfalz-Alarm}{Prüfung und Wartung von Sicherheitssystemen, eigenständige Programmierung und Installation einer Brandmeldeanlage im Übungsbereich der Firma}
+	\cvitem{05.07.21 -- 15.07.21}{Praktikum als Elektroniker}{Pfalz-Alarm}{Prüfung und Wartung von Sicherheitssystemen, eigenständige Programmierung und Installation einer Brandmeldeanlage im Übungsbereich der Firma}
 \end{cvtable}
 
 
@@ -273,7 +320,7 @@
 	}
 	\\
 	\cvitem{08.09.2014 -- 05.07.2020}{Mittlere Reife}{Siebenpfeiffer-Gymnasium Kusel}
-		{}
+		{Persönlicher Fokus auf MINT-Fächer}
 \end{cvtable}
 
 
@@ -372,6 +419,7 @@
 	\cvpubitem{Publication title that is spanning over multiple lines and still
 		does not look too bad}{Authors}{Journal}{Year}
 \end{cvtable}
+
 
 \cvsignature
 
