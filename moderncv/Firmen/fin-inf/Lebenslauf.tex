@@ -1,0 +1,263 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2022 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\footskip}{149.60005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+
+% document language
+\usepackage[german]{babel}  % FIXME: using spanish breaks moderncv
+
+% personal data
+\name{Kimi}{Müller}
+\title{Lebenslauf}                               % optional, remove / comment the line if not wanted
+\born{28.09.2003}                                 % optional, remove / comment the line if not wanted
+\address{Neue Straße 3}{66909 Wahnwegen}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+49~176~567~85909}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{kimi-mueller@proton.me}                               % optional, remove / comment the line if not wanted
+\homepage{www.kimimueller.de}                         % optional, remove / comment the line if not wanted
+
+% Social icons
+\social[xing]{Kimi\_Mueller6}                           % optional, remove / comment the line if not wanted
+
+\social[github]{kuseler}                              % optional, remove / comment the line if not wanted
+
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{images/picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{ MHP Management- und IT-Beratung GmbH }{ Königsallee 49\\D-71638 Ludwigsburg}
+\date{\today}
+\subject{Bewerbung auf ein Duales Studium der Wirtschaftsinformatik}
+\opening{Sehr geehrte Damen und Herren,}
+\closing{Mit freundlichen Grüßen, \\ \includegraphics[scale=0.1]{images/Unterschrift2}}
+%\enclosure[Angehängt]{Lebenslauf, Abiturzeugnis, Arbeitszeugnis}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+Sehr geehrte Damen und Herren,
+
+ Im Folgenden finden Sie drei Gründe, warum ich gerne bei MHP arbeiten möchte.
+
+ Ich kann mich sehr gut mit Ihren Werten identifizieren und teile Ihre Vision, verantwortungsvoll zu handeln und Werte nachhaltig zu schaffen. Ich möchte gerne dazu beitragen, diese Vision zu verwirklichen.\\
+Das breite Portfolio von MHP und der einzigartige interdisziplinäre Ansatz aus Management-, Prozess- und IT-Know-how bieten vielfältige inhaltliche Weiterentwicklungsmöglichkeiten. Ich bin davon überzeugt, dass ich durch eine Zusammenarbeit mit MHP mein fachliches Know-how erweitern und vertiefen kann.\\
+Die Überzeugung von \glqq Enabling You To Shape A Better Tomorrow\grqq{} finde ich sehr inspirierend und ich möchte gerne dazu beitragen, eine bessere Zukunft mitzugestalten.
+
+Nun möchte ich Ihnen darlegen, warum Sie wollen, dass ich bei Ihnen arbeite.\\
+Durch meine langjährige Erfahrung als Technik-Support meiner Familie kann ich sehr gut als Bindeglied zwischen technischen Gegebenheiten und Menschen übersetzen. Diese Fähigkeit kann in einer Beratung nützlich sein, um komplexe technische Konzepte verständlich zu machen.\\
+Dank meines breit gefächerten Interesses an Informatik fällt es mir leicht, weitere Vertiefungen in diesem Bereich zu erlernen. Dadurch kann ich meine Belastung durch das Studium als dualer Student verringern.\\
+Ich verfüge bereits über Codingerfahrung und auch in der Serveradministration habe ich Erfahrungen gesammelt. Dadurch bin ich bereits vom ersten Tag an eine wertvolle Ergänzung Ihres Teams.
+
+Ich würde mich sehr über Ihr Feedback freuen und bedanke mich im Voraus für Ihre Einladung zu einem persönlichen Gespräch.\\
+Ich freue mich auf Ihre Rückmeldung und Einladung auf ein persönliches Gespräch.
+
+
+
+
+\makeletterclosing
+
+
+
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\clearpage
+\makecvtitle
+% \section{Über mich}
+% Ich bin ständig daran interessiert, mich zu entwickeln. Besonders Spaß machen mir knifflige Probleme und Herausforderungen, in Dinge hereinzuschauen und zu verstehen, wie sie funktionieren. Monotonie kann ich jedoch nur schwer ertragen. Der Austausch mit gleichgesinnten ist besonders interessant für mich. Besonders stolz bin ich auf den Server, den ich aufgesetzt habe, und
+\section{Bildung}
+\cventry{17.08.2020 -- 31.03.2023}{Abitur}{Siebenpfeiffer-Gymnasium Kusel}{Kusel}{$\diameter=2,9$}{Leistungsfächer: Informatik, Physik, Englisch}
+\cventry{08.09.2014 -- 05.07.2020}{Mittlere Reife}{Siebenpfeiffer-Gymnasium Kusel}{Kusel}{}{Entwicklung von Interesse an MINT-Fächern}
+
+\section{Berufserfahrung}
+\subsection{Praktika}
+\cventry{08.08.2022 -- 19.08.2022}{Software-Developer}{System Vertrieb Alexander}{Wiesbaden}{}{Entwicklung von Software mit Golang}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}
+Tätigkeiten:
+\begin{itemize}
+\item Erlernen der Grundlagen der Softwareentwicklung mit Golang
+  \begin{itemize}
+  \item Programmierung eines HTTP-Proxys
+  \end{itemize}
+\item Programmierung eines Operators für die Hetzner-API
+  \begin{itemize}
+  \item automatisierte Erstellung und Löschung von SSH-Keys und virtuellen Servern
+  \end{itemize}
+\item CloudInit-Konfiguration
+  \begin{itemize}
+  \item Grundlagen und Konzeptionierung von Benchmarks
+  \end{itemize}
+  \item Ausblick auf Containerorchestrierung mit Kubernetes
+\end{itemize}
+\vspace{\baselineskip}
+\cventry{05.07.21 -- 15.07.21}{Elektroniker}{Pfalz-Alarm GmbH}{Kaiserslautern}{}{Prüfung und Wartung von Sicherheitssystemen}
+Tätigkeiten:
+\begin{itemize}
+  \item elektronische Prüfung von Brandmeldeanlagen
+  \item eigenständige Installation und Programmierung einer Brandmeldeanlage im Übungsbereich der Firma
+\end{itemize}
+
+%
+% \section{Computer skills}
+% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\section{Kompetenzen}
+%\cvitem{Technische Fähigkeiten}{}
+%% Skill matrix as an alternative to rate one's skills, computer or other.
+
+%% Adjusts width of skill matrix columns.
+%% Usage \setcvskillcolumns[<width>][<factor>][<exp_width>]
+%% <width>, <exp_width> should be lengths smaller than \textwidth, <factor> needs to be between 0 and 1.
+%% Examples:
+% \setcvskillcolumns[5em][][]%    adjust first column. Same as \setcvskillcolumns[5em]
+% \setcvskillcolumns[][0.45][]%   adjust third (skill) column. Same as \setcvskillcolumns[][0.45]
+% \setcvskillcolumns[][][\widthof{``Year''}]%     adjust fourth (years) column.
+% \setcvskillcolumns[][0.45][\widthof{``Year''}]%
+% \setcvskillcolumns[\widthof{``Languag''}][0.48][]
+% \setcvskillcolumns[\widthof{``Languag''}]%
+
+%% Adjusts width of legend columns. Usage \setcvskilllegendcolumns[<width>][<factor>]
+%% <factor> needs to be between 0 and 1. <width> should be a length smaller than \textwidth
+%% Examples:
+% \setcvskilllegendcolumns[][0.45]
+% \setcvskilllegendcolumns[\widthof{``Legend''}][0.45]
+% \setcvskilllegendcolumns[0ex][0.46]% this is usefull for the banking style
+
+%% Add a legend if you are using \cvskill{<1-5>} command or \cvskillentry
+%% Usage \cvskilllegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
+% \cvskilllegend % insert default legend without lines
+%\cvskilllegend*[1em]{}% adjust post spacing
+% \cvskilllegend*{Legend}%  Alternatively add a description string
+%% adjust the legend entries for other languages, here German
+%\cvskilllegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
+
+%% Alternative legend style with the first three skill levels in one column
+%% Usage \cvskillplainlegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
+% \setcvskilllegendcolumns[][0.6]%  works for classic, casual, banking
+% \setcvskilllegendcolumns[][0.55]%  works better for oldstyle and fancy
+% \cvskillplainlegend{}
+% \cvskillplainlegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte/Guru]{Legende}
+
+%% Add a head of the skill matrix table with descriptions.
+%% Usage \cvskillhead[<post_padding>][<Level>][<Skill>][<Years>][<Comment>]%
+%\cvskillhead[-0.1em]%   this inserts the standard legend in english and adjust padding
+%% Adjust head of the skill matrix for other languages
+\cvskillhead[0.25em][Level][F\"ahigkeit][Jahre][Bemerkung]
+
+%% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}%
+%% Example usages:
+\cvskillentry*{Coding:}{2}{Python3}{4}{Coding-Challenges}
+\cvskillentry{}{1}{Golang}{1}{Hetzner-Operator sowie API-Server}
+\cvskillentry{}{1}{shell (bash)}{1}{Grundlegende Automatisierung}
+\cvskillentry{}{1}{RegEx}{1}{}
+\cvskillentry*{OS:}{3}{Linux}{4}{Betrieb eines eigenen Servers}% notice the use of the starred command and the optional
+\cvskillentry{}{1}{Docker}{2}{Grundkenntnisse}
+\cvskillentry*{Office:}{3}{Excel}{6}{Erweiterte Fähigkeiten in Excel}
+\cvskillentry{}{2}{\LaTeX}{3}{}
+
+\section{Sonstige}
+\cvlistdoubleitem{Git}{Microsoft Office-Suite}
+\cvlistdoubleitem{Kontaktfreudig}{Lösungsorientiert}
+
+%\cvskillentry*[1em]{Methods}{4}{SCRUM}{8}{SCRUM master for 5 years}
+%% \cvskill{<0-5>} command
+% \cvitem{\textbackslash{cvskill}:}{Skills can be visually expressed by the \textbackslash{cvskill} command, e.g. \cvskill{2}}
+
+
+
+
+\section{Sprachen}
+\cvitemwithcomment{Deutsch}{Muttersprache}{}
+\cvitemwithcomment{Englisch}{B2/C1}{verhandlungssicher}
+\cvitemwithcomment{Französisch}{B1}{selbstständige Sprachverwendung}
+
+\section{Soziales Engagement}
+\cvlistitem{Jugendleiter des Schachclub Thallichtenberg}
+\cvlistitem{Social Media Verwalter der Herrenhandballmannschaft des TV Kusel}
+
+\section{Führerscheine}
+\cvlistitem{Klasse B}
+\cvlistitem{Klasse A2}
+\section{Hobbies}
+\cvitem{Handball}{TV Kusel}
+\cvitem{Schach}{SC Thallichtenberg}
+\cvitem{Coding}{eigene Projekte und Coding-Challenges}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\blfootnote{Wenn sie Verbesserungsvorschläge oder Anregungen für diesen Lebenslauf haben, richten Sie diese bitte via e-mail an mich.}
+
+\clearpage
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
+
