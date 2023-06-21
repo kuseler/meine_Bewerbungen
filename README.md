@@ -1,4 +1,4 @@
-# bewerbung
+# Bewerbungen
 Ein repository, mit dem ich meinen Lebenslauf verwalte.
 
 Da ich sehr stolz darauf bin, möchte ich ihn hier zur Schau stellen.
