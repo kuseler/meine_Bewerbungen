@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.6.12)  21 JUN 2023 14:22
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.6.12)  21 JUN 2023 14:29
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -1506,11 +1506,11 @@ Package hyperref Info: Link coloring OFF on input line 83.
 LaTeX Font Info:    Font shape `TU/LatinModernSans(0)/m/sl' in size <10> not av
 ailable
 (Font)              Font shape `TU/LatinModernSans(0)/m/it' tried instead on in
-put line 94.
+put line 93.
 LaTeX Font Info:    Font shape `TU/LatinModernSans(0)/b/sl' in size <10> not av
 ailable
 (Font)              Font shape `TU/LatinModernSans(0)/b/it' tried instead on in
-put line 94.
+put line 93.
 
 (/usr/share/texmf-dist/tex/latex/microtype/mt-TU-empty.cfg
 File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonsta
@@ -1523,29 +1523,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 <images/Unterschrift2.png, id=38, 357.9774pt x 83.3514pt>
 File: images/Unterschrift2.png Graphic file (type png)
 <use images/Unterschrift2.png>
-Package luatex.def Info: images/Unterschrift2.png  used on input line 107.
+Package luatex.def Info: images/Unterschrift2.png  used on input line 98.
 (luatex.def)             Requested size: 143.18842pt x 33.33995pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./images/Unterschrift2.png>]
 \makecvheaddetailsbox=\box71
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 114.
+(Font)              scaled to size 10.00107pt on input line 105.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 114.
+(Font)              scaled to size 7.00075pt on input line 105.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 114.
+(Font)              scaled to size 5.00053pt on input line 105.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 114.
+(Font)              scaled to size 9.99893pt on input line 105.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 114.
+(Font)              scaled to size 6.99925pt on input line 105.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 114.
+(Font)              scaled to size 4.99947pt on input line 105.
 \makecvheadpicturebox=\box72
 <images/picture.jpg, id=56, 138.57773pt x 198.80272pt>
 File: images/picture.jpg Graphic file (type jpg)
 <use images/picture.jpg>
-Package luatex.def Info: images/picture.jpg  used on input line 114.
+Package luatex.def Info: images/picture.jpg  used on input line 105.
 (luatex.def)             Requested size: 64.0pt x 91.8174pt.
 \makecvheaddetailswidth=\skip102
 \makecvheadpicturewidth=\skip103
@@ -1553,18 +1553,18 @@ Package luatex.def Info: images/picture.jpg  used on input line 114.
 LaTeX Font Info:    Font shape `TU/LatinModernSans(0)/m/sl' in size <17.28> not
  available
 (Font)              Font shape `TU/LatinModernSans(0)/m/it' tried instead on in
-put line 114.
+put line 105.
 LaTeX Font Info:    Font shape `TU/LatinModernSans(0)/m/sl' in size <10.95> not
  available
 (Font)              Font shape `TU/LatinModernSans(0)/m/it' tried instead on in
-put line 118.
+put line 109.
  [2
 
 <./images/picture.jpg>]
 ! Undefined control sequence.
 \H@@footnotetext ...color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.260 ...ichten Sie diese bitte via E-Mail an mich.}
+l.251 ...ichten Sie diese bitte via E-Mail an mich.}
                                                   
 ? 
 [3] (./template.aux)
@@ -1574,16 +1574,15 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  35808 strings out of 478285
- 156559,1977958 words of node,token memory allocated
+ 125240,1977958 words of node,token memory allocated
  4342 words of node memory still in use:
    52 hlist, 7 vlist, 26 rule, 15 disc, 3 local_par, 2 math, 85 glue, 30 kern, 1
 3 penalty, 2 margin_kern, 153 glyph, 258 attribute, 90 glue_spec, 131 attribute_
 list, 4 write, 5 pdf_start_link, 5 pdf_end_link, 5 pdf_action, 28 pdf_colorstack
 , 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:4,2:10279,3:3265,4:559,5:399,6:260,7:8098,8:7,9:2910,10:18,11:
-888
+   avail lists: 2:10279,3:3265,4:559,5:399,6:260,7:7368,8:5,9:2910,10:12,11:465
  54758 multiletter control sequences out of 65536+600000
- 124 fonts using 28427423 bytes
+ 124 fonts using 28427183 bytes
  129i,12n,116p,1004b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/
 texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texmf-dist/f
@@ -1597,7 +1596,7 @@ tAwesome5Free-Regular-400.otf></usr/share/texmf-dist/fonts/opentype/public/fonta
 wesome5/FontAwesome5Free-Solid-900.otf></usr/share/texmf-dist/fonts/opentype/pub
 lic/lm/lmsans10-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsa
 ns10-bold.otf>
-Output written on template.pdf (3 pages, 498012 bytes).
+Output written on template.pdf (3 pages, 495181 bytes).
 
 PDF statistics: 154 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
