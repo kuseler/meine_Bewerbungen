@@ -21,6 +21,8 @@
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
+\newcommand{\MYhref}[3][lightblue]{\href{#2}{\color{#1}{#3}}}%
+
 % adjust the page margins
 \usepackage[scale=0.8, top=2cm, bottom=1cm]{geometry}
 %\setlength{\footskip}{149.60005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
@@ -188,18 +190,18 @@ Tätigkeiten:
 %% Usage \cvskillhead[<post_padding>][<Level>][<Skill>][<Years>][<Comment>]%
 %\cvskillhead[-0.1em]%   this inserts the standard legend in english and adjust padding
 %% Adjust head of the skill matrix for other languages
-\cvskillhead[0.25em][Level][F\"ahigkeit][Jahre][Bemerkung]
+\cvskillhead[0.25em][Level][F\"ahigkeit][Jahre][Bemerkung/Link zu Beispiel]
 
 %% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}%
 %% Example usages:
-\cvskillentry*{Coding:}{2}{Python3}{4}{Coding-Challenges und Informatikunterricht}
-\cvskillentry{}{1}{Golang}{1}{Hetzner-Operator sowie API-Server}
+\cvskillentry*{Coding:}{2}{Python3}{4}{\MYhref{https://www.codewars.com/users/kuseler/completed_solutions}{Coding-Challenges}, \MYhref{https://github.com/kuseler/HOI4-all-dlc-script/tree/master}{DLC editor}}
+\cvskillentry{}{1}{Golang}{1}{{\MYhref{https://github.com/kuseler/hcloud-operate}{Hetzner-Operator}}, \MYhref{https://github.com/kuseler/costperuse-API}{API-Server}}
 \cvskillentry{}{1}{shell (bash)}{1}{Grundlegende Automatisierung}
 \cvskillentry{}{1}{RegEx}{1}{}
-\cvskillentry*{OS:}{3}{Linux}{4}{Betrieb eines eigenen Servers}% notice the use of the starred command and the optional
+\cvskillentry*{OS:}{3}{Linux}{4}{\MYhref{https://kimimueller.de}{Betrieb eines eigenen Servers}}% notice the use of the starred command and the optional
 \cvskillentry{}{1}{Docker}{2}{Grundkenntnisse}
 \cvskillentry*{Office:}{3}{MS Excel}{6}{}
-\cvskillentry{}{2}{\LaTeX}{3}{}
+\cvskillentry{}{2}{\LaTeX}{3}{\MYhref{https://github.com/kuseler/meine_Bewerbungen/blob/main/moderncv/template.tex}{Bewerbungen}, Hausaufgaben}
 \cvskillentry{}{2}{MS Word}{6}{}
 \cvskillentry{}{2}{MS Powerpoint}{6}{}
 \newpage
@@ -232,8 +234,7 @@ Tätigkeiten:
 
 
 \section{Führerscheine}
-\cvlistitem{Klasse B}
-\cvlistitem{Klasse A2}
+\cvlistdoubleitem{Klasse B}{Klasse A2}
 
 
 % Publications from a BibTeX file without multibib
