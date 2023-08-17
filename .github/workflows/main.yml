@@ -16,4 +16,4 @@ jobs:
           compiler: lualatex
           args: -interaction nonstopmode -shell-escape
       - name: copy
-        run: cp template.pdf ../
+        run: cp -f template.pdf ../
