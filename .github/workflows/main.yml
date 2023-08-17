@@ -12,6 +12,6 @@ jobs:
         uses: dante-ev/latex-action@latest
         with:
           working_directory: moderncv
-          compiler: lualatex
           root_file: template.tex
-          args: -interaction=nonstopmode -shell-escape
+          compiler: lualatex
+          args: -interaction nonstopmode
