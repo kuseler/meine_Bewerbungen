@@ -14,4 +14,4 @@ jobs:
           working_directory: moderncv
           root_file: template.tex
           compiler: lualatex
-          args: -interaction nonstopmode
+          args: -interaction nonstopmode -shell-escape
