@@ -11,4 +11,3 @@ jobs:
         with:
           run: |
             lualatex -interaction nonstopmode moderncv/template.tex
-            pdfjam "moderncv/template.pdf" "zeugnisse/Abiturzeugnis.pdf" "zeugnisse/EF SET Certificate.pdf" "zeugnisse/Arbeitszeugnis_SVA.pdf" -o template.pdf
