@@ -3,11 +3,12 @@ run-name: ${{ github.actor }} is finalizing CV
 
 on: [push]
 jobs:
-  main:
+  build_latex:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: xu-cheng/texlive-action/full@v1
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
         with:
-          run: |
-            lualatex -interaction nonstopmode moderncv/template.tex
+          root_file: main.tex
