@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.8.17)  17 AUG 2023 11:03
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Arch Linux)  (format=lualatex 2023.8.17)  17 AUG 2023 11:05
  restricted system commands enabled.
 **template.tex
 (./template.tex
@@ -1481,29 +1481,29 @@ LaTeX Font Info:    Font shape `TU/LatinModernSans(0)/m/sl' in size <10.95> not
 put line 111.
  [2
 
-<./images/picture.jpg>] [3]
+<./images/picture.jpg>]
 ! Undefined control sequence.
 \H@@footnotetext ...color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.253 ...ichten Sie diese bitte via E-Mail an mich.}
+l.251 ...ichten Sie diese bitte via E-Mail an mich.}
                                                   
 ? 
-[4] (./template.aux)
+[3] (./template.aux)
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 9ADBD0BAAF4141522C87E0DD007383D3;788.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35727 strings out of 478285
+ 35720 strings out of 478285
  125240,1977958 words of node,token memory allocated
  4704 words of node memory still in use:
    54 hlist, 7 vlist, 28 rule, 17 disc, 3 local_par, 2 math, 91 glue, 31 kern, 1
 4 penalty, 2 margin_kern, 177 glyph, 278 attribute, 90 glue_spec, 141 attribute_
 list, 4 write, 6 pdf_start_link, 6 pdf_end_link, 6 pdf_action, 30 pdf_colorstack
 , 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 2:10333,3:3182,4:579,5:394,6:260,7:7375,8:5,9:2863,10:12,11:473
- 54676 multiletter control sequences out of 65536+600000
- 124 fonts using 28427503 bytes
+   avail lists: 2:9739,3:3083,4:567,5:393,6:254,7:7288,8:5,9:2792,10:12,11:474
+ 54670 multiletter control sequences out of 65536+600000
+ 124 fonts using 28427343 bytes
  129i,12n,116p,1004b,1120s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/
 texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texmf-dist/f
@@ -1517,10 +1517,10 @@ tAwesome5Free-Regular-400.otf></usr/share/texmf-dist/fonts/opentype/public/fonta
 wesome5/FontAwesome5Free-Solid-900.otf></usr/share/texmf-dist/fonts/opentype/pub
 lic/lm/lmsans10-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsa
 ns10-bold.otf>
-Output written on template.pdf (4 pages, 496803 bytes).
+Output written on template.pdf (3 pages, 496061 bytes).
 
-PDF statistics: 165 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 131072)
+PDF statistics: 161 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 12 named destinations out of 1000 (max. 131072)
  72 words of extra memory for PDF output out of 10000 (max. 100000000)
 
