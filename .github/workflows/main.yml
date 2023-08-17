@@ -1,0 +1,10 @@
+name: merge zeugnis
+run-name: ${{ github.actor }} is finalizing CV
+
+on: [push]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - run: lualatex -interaction nonstopmode moderncv/template.tex
+      - run: pdfjam "moderncv/template.pdf" "zeugnisse/Abiturzeugnis.pdf" "zeugnisse/EF SET Certificate.pdf" "zeugnisse/Arbeitszeugnis_SVA.pdf" -o template.pdf
