@@ -9,6 +9,9 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: dante-ev/latex-action@latest
         with:
-          root_file: moderncv/template.tex
+          working_directory: moderncv
+          compiler: lualatex
+          root_file: template.tex
+          args: -interaction=nonstopmode -shell-escape
